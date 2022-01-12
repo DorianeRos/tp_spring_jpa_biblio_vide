@@ -1,0 +1,11 @@
+myapp\imp\FileLogger.class
+myapp\imp\SimpleCalculator.class
+myapp\entities\Client.class
+myapp\SpringConfiguration.class
+myapp\entities\Emprunt.class
+myapp\imp\StderrLogger.class
+myapp\services\ILogger.class
+myapp\imp\BeanFileLogger.class
+myapp\entities\Livre.class
+myapp\services\ICalculator.class
+myapp\dao\DaoClient.class

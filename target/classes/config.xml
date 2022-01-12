@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- pour utiliser les annotations -->
+    <context:annotation-config />
+
+    <!-- pour trouver les classes de service -->
+    <context:component-scan base-package="myapp.imp" />
+
+    <!-- logger sur src/tmp/myapp.log -->
+  
+    <bean id="fileLogger" class="myapp.imp.BeanFileLogger">
+        <property name="fileName">
+            <value>tmp/myapp.log</value>
+        </property>
+    </bean>
+
+</beans>
